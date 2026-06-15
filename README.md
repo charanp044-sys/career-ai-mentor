@@ -1,23 +1,56 @@
-About the Project
+# Helping Hand – AI Career Mentor
 
-Helping Hand – AI Career Mentor is an AI-powered career guidance platform that helps students and professionals discover suitable career paths through psychology-based assessments. The system analyzes a user's personality, interests, strengths, aptitude, and behavioral patterns using a 50–80 question assessment.
+## About the Project
 
-Based on the analysis, the platform recommends the top three career options along with compatibility scores and personalized career roadmaps. The project aims to act as a virtual career counselor, helping users make informed career decisions.
+Helping Hand is an AI-powered career guidance platform designed to help students and professionals discover suitable career paths through psychology-based assessments. The system analyzes personality traits, interests, strengths, aptitude, and behavioral patterns to recommend the top three career options along with personalized guidance.
 
-### Technologies Used
+## Current Progress
+
+### Completed Features
+
+* Responsive Landing Page using HTML and Tailwind CSS
+* Dark Mode Toggle using Local Storage API
+* Speech Synthesis API (Text-to-Speech)
+* Speech Recognition API (Voice-to-Text)
+* Geolocation API Integration
+* GitHub Version Control and Repository Management
+
+## Technologies Used
+
+### Frontend
 
 * HTML5
 * Tailwind CSS
 * JavaScript
-* Node.js
-* Express.js
-* MongoDB
 
-### Key Features
+### Browser APIs
 
-* User Registration & Login
+* Local Storage API
+* Speech Synthesis API
+* Speech Recognition API
+* Geolocation API
+
+### Development Tools
+
+* Visual Studio Code
+* Git
+* GitHub
+
+## Planned Features
+
+* User Registration
+* User Login
 * Psychology-Based Career Assessment
-* AI Career Recommendations
+* AI Career Recommendation Engine
 * Top 3 Career Suggestions
+* Career Analysis Dashboard
 * Personalized Career Roadmap
-* Career Dashboard
+
+## Project Goal
+
+The goal of Helping Hand is to act as a virtual AI Career Mentor that helps users understand their strengths, interests, and personality traits, enabling them to make informed career decisions through intelligent analysis and recommendations.
+
+## Author
+
+**Charan P**
+

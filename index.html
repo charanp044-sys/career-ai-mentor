@@ -1,120 +1,176 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Helping Hand | AI Career Mentor</title>
+
 <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
+
 <body>
 
-<!-- Hero Section -->
+<!-- HERO SECTION -->
+
 <section
 class="relative min-h-screen bg-cover bg-center"
 style="background-image:url('career.jpeg.png');">
-    <!-- Dark Overlay -->
-    <div class="absolute inset-0 bg-black/50"></div>
 
-    <!-- Navbar -->
-    <nav class="absolute top-0 left-0 w-full z-50">
+```
+<div class="absolute inset-0 bg-black/60"></div>
 
-        <div class="flex justify-between items-center px-12 py-6">
+<!-- NAVBAR -->
 
-            <div>
-                <h1 class="text-white text-4xl font-bold">
-                    Helping Hand
-                </h1>
+<nav class="relative z-20 flex justify-between items-center px-10 py-6">
 
-                <p class="text-gray-300 text-sm">
-                    AI Career Mentor
-                </p>
-            </div>
+    <div>
+        <h1 class="text-white text-4xl font-bold">
+            Helping Hand
+        </h1>
 
-           <div class="flex items-center gap-6">
+        <p class="text-gray-300">
+            AI Career Mentor
+        </p>
+    </div>
 
-    <a href="#" class="text-white hover:text-purple-400">
-        Home
-    </a>
-
-    <a href="#" class="text-white hover:text-purple-400">
-        About
-    </a>
-
-    <a href="#" class="text-white hover:text-purple-400">
-        Features
-    </a>
-    <button
-id="locationBtn"
-class="bg-blue-600 text-white px-5 py-2 rounded-full">
- Get Location
-</button>
-
-<p id="locationOutput" class="text-white mt-3"></p>
-<button
-id="speakBtn"
-class="bg-green-600 text-white px-5 py-2 rounded-full">
-🔊 Read Question
-</button>
-    <!-- Dark Mode Button -->
-    <button
-        id="themeToggle"
-        class="border border-white text-white px-4 py-2 rounded-full hover:bg-white hover:text-black">
-        🌙
-    </button>
-
-    <!-- Login Button -->
     <a href="login.html"
-       class="border border-white text-white px-6 py-2 rounded-full hover:bg-white hover:text-black">
+    class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
         Login
     </a>
 
+</nav>
+
+<!-- HERO CONTENT -->
+
+<div
+class="relative z-20 flex flex-col justify-center items-center text-center min-h-screen px-6">
+
+    <h1 class="text-7xl font-bold text-white mb-4">
+        Helping Hand
+    </h1>
+
+    <h2 class="text-3xl text-blue-300 mb-6">
+        AI Career Mentor
+    </h2>
+
+    <p class="text-white text-lg max-w-3xl mb-8">
+        Helping students discover suitable career paths through
+        psychology, aptitude, problem-solving and skill assessment.
+    </p>
+
+    <a href="login.html"
+    class="bg-green-600 text-white px-8 py-4 rounded-lg hover:bg-green-700">
+        Get Started
+    </a>
+
 </div>
-
-        </div>
-
-
-</button>
-    </nav>
-
-    <!-- Hero Content -->
-    <div class="relative z-20 flex items-center min-h-screen px-16">
-
-        <div class="max-w-3xl">
-
-            <h1 class="text-8xl font-extrabold text-white mb-4">
-                Helping Hand
-            </h1>
-
-            <h2 class="text-4xl text-purple-400 font-semibold mb-6">
-                AI Career Mentor
-            </h2>
-
-            <p class="text-xl text-gray-200 leading-relaxed mb-8">
-                Discover your ideal career through AI-powered
-                psychology analysis, personality assessment,
-                aptitude evaluation and intelligent career guidance.
-            </p>
-
-            <div class="flex gap-4">
-
-                <a href="register.html"
-                class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-full font-semibold">
-                    Get Started
-                </a>
-
-                <a href="#"
-                class="border border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-black">
-                    Learn More
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
+```
 
 </section>
+
+<!-- ABOUT -->
+
+<section class="py-20 bg-white">
+
+```
+<div class="max-w-5xl mx-auto text-center px-6">
+
+    <h2 class="text-4xl font-bold mb-6">
+        About Us
+    </h2>
+
+    <p class="text-lg text-gray-700">
+        Helping Hand is an AI-powered career mentor platform
+        designed to help students understand their strengths,
+        aptitude, personality and career interests.
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="bg-gray-100 py-20">
+
+```
+<h2 class="text-4xl font-bold text-center mb-10">
+    Features
+</h2>
+
+<div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto px-6">
+
+    <div class="bg-white p-8 rounded-lg shadow">
+        <h3 class="font-bold text-xl mb-2">
+            Psychology Assessment
+        </h3>
+
+        <p>
+            Analyze personality and interests.
+        </p>
+    </div>
+
+    <div class="bg-white p-8 rounded-lg shadow">
+        <h3 class="font-bold text-xl mb-2">
+            Aptitude Evaluation
+        </h3>
+
+        <p>
+            Evaluate reasoning and problem solving.
+        </p>
+    </div>
+
+    <div class="bg-white p-8 rounded-lg shadow">
+        <h3 class="font-bold text-xl mb-2">
+            Career Report
+        </h3>
+
+        <p>
+            Generate strengths and suitable domains.
+        </p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- GEOLOCATION -->
+
+<section class="bg-blue-50 py-20 text-center">
+
+```
+<h2 class="text-4xl font-bold mb-4">
+    Find Opportunities Near You
+</h2>
+
+<p class="text-gray-600 mb-6">
+    Detect your current location using HTML5 Geolocation API.
+</p>
+
+<button
+    id="locationBtn"
+    class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700">
+    Detect My Location
+</button>
+
+<div id="locationOutput" class="mt-8"></div>
+```
+
+</section>
+
+<footer class="bg-black text-white text-center py-4">
+
+```
+© 2026 Helping Hand | AI Career Mentor
+```
+
+</footer>
+
 <script src="script.js"></script>
+
 </body>
 </html>

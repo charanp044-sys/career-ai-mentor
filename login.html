@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login | Helping Hand</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+<div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md">
+
+```
+<h1 class="text-3xl font-bold text-center mb-2">
+    Helping Hand
+</h1>
+
+<p class="text-center text-gray-500 mb-6">
+    AI Career Mentor Login
+</p>
+
+<form id="loginForm" class="space-y-4">
+
+    <div>
+        <label class="block mb-2 font-medium">
+            Email
+        </label>
+
+        <input
+        type="email"
+        id="email"
+        placeholder="Enter Email"
+        class="w-full p-3 border rounded-lg"
+        required>
+    </div>
+
+    <div>
+        <label class="block mb-2 font-medium">
+            Password
+        </label>
+
+        <input
+        type="password"
+        id="password"
+        placeholder="Enter Password"
+        class="w-full p-3 border rounded-lg"
+        required>
+    </div>
+
+    <button
+    type="submit"
+    class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">
+        Login
+    </button>
+
+</form>
+```
+
+</div>
+
+<script>
+
+document.getElementById("loginForm")
+.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    let email =
+    document.getElementById("email").value;
+
+    let password =
+    document.getElementById("password").value;
+
+    if(email === "" || password === ""){
+
+        alert("Please fill all fields");
+
+        return;
+    }
+
+    localStorage.setItem(
+        "userEmail",
+        email
+    );
+
+    window.location.href =
+    "assessment.html";
+
+});
+
+</script>
+
+</body>
+</html>

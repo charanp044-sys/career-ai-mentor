@@ -1,176 +1,177 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Helping Hand | AI Career Mentor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helping Hand | AI Career Mentor</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
-
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-100">
 
-<!-- HERO SECTION -->
-
+<!-- Hero Section -->
 <section
 class="relative min-h-screen bg-cover bg-center"
 style="background-image:url('career.jpeg.png');">
 
-```
-<div class="absolute inset-0 bg-black/60"></div>
+    <div class="absolute inset-0 bg-black/60"></div>
 
-<!-- NAVBAR -->
+    <!-- Navbar -->
+    <nav class="relative z-20 flex justify-between items-center px-10 py-6">
 
-<nav class="relative z-20 flex justify-between items-center px-10 py-6">
+        <div>
+            <h1 class="text-white text-4xl font-bold">
+                Helping Hand
+            </h1>
 
-    <div>
-        <h1 class="text-white text-4xl font-bold">
+            <p class="text-gray-300">
+                AI Career Mentor
+            </p>
+        </div>
+
+        <a
+        href="login.html"
+        class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+            Login
+        </a>
+
+    </nav>
+
+    <!-- Hero Content -->
+    <div
+    class="relative z-20 flex flex-col justify-center items-center text-center min-h-screen px-6">
+
+        <h1 class="text-7xl font-bold text-white mb-4">
             Helping Hand
         </h1>
 
-        <p class="text-gray-300">
+        <h2 class="text-3xl text-blue-300 mb-6">
             AI Career Mentor
+        </h2>
+
+        <p class="text-white text-lg max-w-3xl mb-8">
+            Discover your ideal career using AI-powered psychology,
+            aptitude and problem-solving assessment.
         </p>
+
+        <a
+        href="login.html"
+        class="bg-green-600 text-white px-8 py-4 rounded-lg hover:bg-green-700">
+            Get Started
+        </a>
+
     </div>
 
-    <a href="login.html"
-    class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
-        Login
-    </a>
+</section>
 
-</nav>
+<!-- About -->
+<section class="bg-white py-16">
 
-<!-- HERO CONTENT -->
+    <div class="max-w-5xl mx-auto text-center px-6">
 
-<div
-class="relative z-20 flex flex-col justify-center items-center text-center min-h-screen px-6">
+        <h2 class="text-4xl font-bold mb-6">
+            About Helping Hand
+        </h2>
 
-    <h1 class="text-7xl font-bold text-white mb-4">
-        Helping Hand
-    </h1>
+        <p class="text-gray-700 text-lg">
+            Helping Hand is an AI-powered career guidance platform
+            that helps students discover suitable career paths by
+            analyzing personality, interests, aptitude and
+            problem-solving skills.
+        </p>
 
-    <h2 class="text-3xl text-blue-300 mb-6">
-        AI Career Mentor
+    </div>
+
+</section>
+
+<!-- Features -->
+<section class="bg-gray-100 py-16">
+
+    <h2 class="text-4xl font-bold text-center mb-10">
+        Our Features
     </h2>
 
-    <p class="text-white text-lg max-w-3xl mb-8">
-        Helping students discover suitable career paths through
-        psychology, aptitude, problem-solving and skill assessment.
-    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-10">
 
-    <a href="login.html"
-    class="bg-green-600 text-white px-8 py-4 rounded-lg hover:bg-green-700">
-        Get Started
-    </a>
+        <div
+        id="card1"
+        class="bg-white p-8 rounded-xl shadow-lg transition duration-300">
 
-</div>
-```
+            <h3 class="text-2xl font-bold mb-3">
+                🧠 Psychology Assessment
+            </h3>
+
+            <p>
+                Analyze personality, interests and behaviour.
+            </p>
+
+        </div>
+
+        <div
+        id="card2"
+        class="bg-white p-8 rounded-xl shadow-lg transition duration-300">
+
+            <h3 class="text-2xl font-bold mb-3">
+                🤖 AI Career Recommendation
+            </h3>
+
+            <p>
+                AI recommends suitable career domains based on your answers.
+            </p>
+
+        </div>
+
+        <div
+        id="card3"
+        class="bg-white p-8 rounded-xl shadow-lg transition duration-300">
+
+            <h3 class="text-2xl font-bold mb-3">
+                🎯 Top 3 Career Suggestions
+            </h3>
+
+            <p>
+                Get your top three career recommendations instantly.
+            </p>
+
+        </div>
+
+    </div>
 
 </section>
 
-<!-- ABOUT -->
+<!-- Geolocation -->
+<section class="bg-blue-50 py-16 text-center">
 
-<section class="py-20 bg-white">
-
-```
-<div class="max-w-5xl mx-auto text-center px-6">
-
-    <h2 class="text-4xl font-bold mb-6">
-        About Us
+    <h2 class="text-4xl font-bold mb-4">
+        Find Opportunities Near You
     </h2>
 
-    <p class="text-lg text-gray-700">
-        Helping Hand is an AI-powered career mentor platform
-        designed to help students understand their strengths,
-        aptitude, personality and career interests.
+    <p class="text-gray-700 mb-6">
+        Detect your current location using the Geolocation API.
     </p>
 
-</div>
-```
-
-</section>
-
-<!-- FEATURES -->
-
-<section class="bg-gray-100 py-20">
-
-```
-<h2 class="text-4xl font-bold text-center mb-10">
-    Features
-</h2>
-
-<div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto px-6">
-
-    <div class="bg-white p-8 rounded-lg shadow">
-        <h3 class="font-bold text-xl mb-2">
-            Psychology Assessment
-        </h3>
-
-        <p>
-            Analyze personality and interests.
-        </p>
-    </div>
-
-    <div class="bg-white p-8 rounded-lg shadow">
-        <h3 class="font-bold text-xl mb-2">
-            Aptitude Evaluation
-        </h3>
-
-        <p>
-            Evaluate reasoning and problem solving.
-        </p>
-    </div>
-
-    <div class="bg-white p-8 rounded-lg shadow">
-        <h3 class="font-bold text-xl mb-2">
-            Career Report
-        </h3>
-
-        <p>
-            Generate strengths and suitable domains.
-        </p>
-    </div>
-
-</div>
-```
-
-</section>
-
-<!-- GEOLOCATION -->
-
-<section class="bg-blue-50 py-20 text-center">
-
-```
-<h2 class="text-4xl font-bold mb-4">
-    Find Opportunities Near You
-</h2>
-
-<p class="text-gray-600 mb-6">
-    Detect your current location using HTML5 Geolocation API.
-</p>
-
-<button
+    <button
     id="locationBtn"
     class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700">
-    Detect My Location
-</button>
+        Detect My Location
+    </button>
 
-<div id="locationOutput" class="mt-8"></div>
-```
+    <div
+    id="locationOutput"
+    class="mt-6 text-lg text-gray-700">
+    </div>
 
 </section>
 
-<footer class="bg-black text-white text-center py-4">
+<!-- Footer -->
+<footer class="bg-black text-white text-center py-5">
 
-```
-© 2026 Helping Hand | AI Career Mentor
-```
+    © 2026 Helping Hand | AI Career Mentor
 
 </footer>
 
-<script src="script.js"></script>
+<script src="index.js"></script>
 
 </body>
 </html>

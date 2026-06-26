@@ -1,205 +1,325 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helping Hand | Career Assessment</title>
 
-<title>Career Assessment</title>
-
-<script src="https://cdn.tailwindcss.com"></script>
-
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100">
 
-<div class="max-w-4xl mx-auto py-10 px-6">
+<div class="max-w-5xl mx-auto my-10 bg-white shadow-xl rounded-xl p-8">
 
-```
-<h1 class="text-4xl font-bold text-center mb-8">
-    Career Assessment
-</h1>
+    <h1 class="text-4xl font-bold text-center text-blue-700">
+        Helping Hand
+    </h1>
 
-<form id="careerForm" class="space-y-8">
+    <p class="text-center text-gray-600 mb-8">
+        AI Career Mentor Assessment
+    </p>
 
-    <!-- Student Details -->
+    <form id="careerForm" class="space-y-6">
 
-    <div>
-        <label class="font-semibold">Name</label>
-        <input
-        type="text"
-        id="name"
-        class="w-full p-3 border rounded-lg"
-        required>
+        <!-- Name -->
+
+        <div>
+
+            <label class="font-semibold block">
+                Full Name
+            </label>
+
+            <input
+            type="text"
+            id="name"
+            placeholder="Enter your full name"
+            class="w-full border rounded-lg p-3 mt-2">
+
+            <p id="charCount" class="text-blue-600 text-sm mt-2">
+                Characters : 0
+            </p>
+
+        </div>
+
+        <!-- Email -->
+
+        <div>
+
+            <label class="font-semibold block">
+                Email
+            </label>
+
+            <input
+            type="email"
+            id="userEmail"
+            placeholder="Enter your email"
+            class="w-full border rounded-lg p-3 mt-2">
+
+        </div>
+
+        <hr>
+
+        <h2 class="text-2xl font-bold text-blue-700">
+            Psychology Assessment
+        </h2>
+
+        <!-- Question 1 -->
+
+        <div>
+
+            <label>
+                1. I enjoy communicating with new people.
+            </label>
+
+            <select
+            id="q1"
+            class="w-full border rounded-lg p-3 mt-2">
+
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+
+            </select>
+
+        </div>
+
+        <!-- Question 2 -->
+
+        <div>
+
+            <label>
+                2. I enjoy leading a team.
+            </label>
+
+            <select
+            id="q2"
+            class="w-full border rounded-lg p-3 mt-2">
+
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+
+            </select>
+
+        </div>
+
+        <!-- Question 3 -->
+
+        <div>
+
+            <label>
+                3. I enjoy solving difficult problems.
+            </label>
+
+            <select
+            id="q3"
+            class="w-full border rounded-lg p-3 mt-2">
+
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+
+            </select>
+
+        </div>
+
+        <!-- Question 4 -->
+
+        <div>
+
+            <label>
+                4. I enjoy creative activities.
+            </label>
+
+            <select
+            id="q4"
+            class="w-full border rounded-lg p-3 mt-2">
+
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+
+            </select>
+
+        </div>
+
+        <!-- Question 5 -->
+
+        <div>
+
+            <label>
+                5. I am interested in technology.
+            </label>
+
+            <select
+            id="q5"
+            class="w-full border rounded-lg p-3 mt-2">
+
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+
+            </select>
+
+        </div>
+            <hr>
+
+        <h2 class="text-2xl font-bold text-blue-700">
+            Aptitude Assessment
+        </h2>
+
+        <!-- Question 6 -->
+
+        <div>
+
+            <label>
+                6. I enjoy mathematics.
+            </label>
+
+            <select
+            id="q6"
+            class="w-full border rounded-lg p-3 mt-2">
+
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+
+            </select>
+
+        </div>
+
+        <!-- Question 7 -->
+
+        <div>
+
+            <label>
+                7. I enjoy logical reasoning.
+            </label>
+
+            <select
+            id="q7"
+            class="w-full border rounded-lg p-3 mt-2">
+
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+
+            </select>
+
+        </div>
+
+        <!-- Question 8 -->
+
+        <div>
+
+            <label>
+                8. I enjoy learning new technologies.
+            </label>
+
+            <select
+            id="q8"
+            class="w-full border rounded-lg p-3 mt-2">
+
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+
+            </select>
+
+        </div>
+
+        <hr>
+
+        <h2 class="text-2xl font-bold text-blue-700">
+            Problem Solving
+        </h2>
+
+        <!-- Question 9 -->
+
+        <div>
+
+            <label>
+                9. I remain calm during difficult situations.
+            </label>
+
+            <select
+            id="q9"
+            class="w-full border rounded-lg p-3 mt-2">
+
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+
+            </select>
+
+        </div>
+
+        <!-- Question 10 -->
+
+        <div>
+
+            <label>
+                10. I enjoy finding different solutions to problems.
+            </label>
+
+            <select
+            id="q10"
+            class="w-full border rounded-lg p-3 mt-2">
+
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+
+            </select>
+
+        </div>
+
+        <!-- Submit Button -->
+
+        <button
+        id="submitBtn"
+        type="submit"
+        class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">
+
+            Submit Assessment
+
+        </button>
+
+    </form>
+
+    <!-- Result Section -->
+
+    <div
+    id="result"
+    class="hidden mt-10 bg-blue-50 p-8 rounded-xl">
+
     </div>
 
-    <div>
-        <label class="font-semibold">Email</label>
-        <input
-        type="email"
-        id="userEmail"
-        class="w-full p-3 border rounded-lg"
-        required>
-    </div>
-
-    <!-- Psychology Questions -->
-
-    <div>
-        <label class="font-semibold">
-            1. I enjoy working with people.
-        </label>
-
-        <select id="q1" class="w-full p-3 border rounded-lg">
-            <option value="1">Strongly Disagree</option>
-            <option value="2">Disagree</option>
-            <option value="3">Neutral</option>
-            <option value="4">Agree</option>
-            <option value="5">Strongly Agree</option>
-        </select>
-    </div>
-
-    <div>
-        <label class="font-semibold">
-            2. I like leading a team.
-        </label>
-
-        <select id="q2" class="w-full p-3 border rounded-lg">
-            <option value="1">Strongly Disagree</option>
-            <option value="2">Disagree</option>
-            <option value="3">Neutral</option>
-            <option value="4">Agree</option>
-            <option value="5">Strongly Agree</option>
-        </select>
-    </div>
-
-    <div>
-        <label class="font-semibold">
-            3. I enjoy solving difficult problems.
-        </label>
-
-        <select id="q3" class="w-full p-3 border rounded-lg">
-            <option value="1">Strongly Disagree</option>
-            <option value="2">Disagree</option>
-            <option value="3">Neutral</option>
-            <option value="4">Agree</option>
-            <option value="5">Strongly Agree</option>
-        </select>
-    </div>
-
-    <div>
-        <label class="font-semibold">
-            4. I enjoy creative activities.
-        </label>
-
-        <select id="q4" class="w-full p-3 border rounded-lg">
-            <option value="1">Strongly Disagree</option>
-            <option value="2">Disagree</option>
-            <option value="3">Neutral</option>
-            <option value="4">Agree</option>
-            <option value="5">Strongly Agree</option>
-        </select>
-    </div>
-
-    <div>
-        <label class="font-semibold">
-            5. I enjoy learning technology.
-        </label>
-
-        <select id="q5" class="w-full p-3 border rounded-lg">
-            <option value="1">Strongly Disagree</option>
-            <option value="2">Disagree</option>
-            <option value="3">Neutral</option>
-            <option value="4">Agree</option>
-            <option value="5">Strongly Agree</option>
-        </select>
-    </div>
-
-    <!-- Aptitude Questions -->
-
-    <div>
-        <label class="font-semibold">
-            6. What comes next? 2,4,8,16,?
-        </label>
-
-        <select id="q6" class="w-full p-3 border rounded-lg">
-            <option value="0">18</option>
-            <option value="0">24</option>
-            <option value="5">32</option>
-            <option value="0">64</option>
-        </select>
-    </div>
-
-    <div>
-        <label class="font-semibold">
-            7. Which number is odd?
-        </label>
-
-        <select id="q7" class="w-full p-3 border rounded-lg">
-            <option value="0">12</option>
-            <option value="0">18</option>
-            <option value="5">21</option>
-            <option value="0">30</option>
-        </select>
-    </div>
-
-    <div>
-        <label class="font-semibold">
-            8. Which is a programming language?
-        </label>
-
-        <select id="q8" class="w-full p-3 border rounded-lg">
-            <option value="5">Python</option>
-            <option value="0">Chrome</option>
-            <option value="0">Google</option>
-            <option value="0">Windows</option>
-        </select>
-    </div>
-
-    <!-- Problem Solving -->
-
-    <div>
-        <label class="font-semibold">
-            9. A project deadline is tomorrow and a member is absent.
-        </label>
-
-        <select id="q9" class="w-full p-3 border rounded-lg">
-            <option value="0">Wait</option>
-            <option value="5">Reassign Tasks</option>
-            <option value="0">Cancel Work</option>
-            <option value="0">Ignore It</option>
-        </select>
-    </div>
-
-    <div>
-        <label class="font-semibold">
-            10. A system crashes before submission.
-        </label>
-
-        <select id="q10" class="w-full p-3 border rounded-lg">
-            <option value="5">Find Backup</option>
-            <option value="0">Panic</option>
-            <option value="0">Quit</option>
-            <option value="0">Wait</option>
-        </select>
-    </div>
-
-    <button
-    type="submit"
-    class="bg-blue-600 text-white px-8 py-3 rounded-lg">
-        Generate Career Report
-    </button>
-
-</form>
-
-<div
-id="result"
-class="hidden mt-10 bg-white p-6 rounded-lg shadow-lg">
 </div>
-```
 
-</div>
-
-<script src="script.js"></script>
+<script src="assessment.js"></script>
 
 </body>
 </html>
